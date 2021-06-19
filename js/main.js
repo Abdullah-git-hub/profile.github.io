@@ -16,6 +16,7 @@ const tab4 = document.getElementById("tab4");
 const altSelectorDiv = document.querySelector('#selection');
 const altSelector = document.querySelector('#selectionTxt');
 const altTab = document.querySelector(".altTab");
+const altSelectorIcon = altSelectorDiv.querySelector(".fa-chevron-down");
 
 
 // default
@@ -89,24 +90,10 @@ function opntab4(){
     altSelector.innerHTML = document.getElementsByClassName("clickedBtn")[0].innerHTML;
 }
 
-altSelectorDiv.addEventListener('focusin', ()=>{
-    altTab.classList.add("altSelectAct");
+altSelectorDiv.addEventListener('click', ()=>{
+    altTab.classList.toggle("altSelectAct");
+    altSelectorIcon.classList.toggle("scaleInvrs");
 });
-
-altTab.classList.remove("altSelectAct")
-
-// function ll(){
-//     altTab.classList.remove("altSelectAct")
-// }
-
-
-// transform: scaleY(-1);
-
-
-
-
-
-
 
 
 // ------- progress section events
@@ -235,4 +222,3 @@ var myChart = new Chart(can2, {
     },
     }
 );
-// options.plugins.legend.labels
