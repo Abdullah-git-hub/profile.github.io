@@ -504,3 +504,6 @@ div#verCanWrapper {
   transform: translateY(-1px);
   opacity: 1;
 }
+.scaleInvrs{
+  transform: scaleY(-1);
+}
