@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
+    <link rel="shortcut icon" href="images/tmc2fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <script src="https://kit.fontawesome.com/d708101dd1.js"></script>
 </head>
+
 <body>
     <section>
-
-
         <div class="infoleft">
             <div class="infoleftWrapper">
-                <div class="userinfo">
+                <div class="userinfo p-3 rounded shadow-sm">
                     <img src="images/tmc1.png" alt="" class="userImg">
 
                     <div class="cwrapper">
                         <p class="userName">Abdullah</p>
-                    <div class="connect">
-                        <a href="#"><i class="fas fa-envelope"><span>Message</span></i></a>
-                        <a href="#"><i class="fas fa-star"></i></a>
-                    </div>
+                        <div class="connect">
+                            <a href="#"><i class="fas fa-envelope"><span>Message</span></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                        </div>
                     </div>
 
                 </div>
-                <div class="moreinfo">
-                    
+                <div class="moreinfo p-3 rounded shadow-sm">
+
                     <table>
                         <tr class="solvingData">
                             <td id="contestNum">
@@ -48,7 +50,8 @@
 
                     <div class="addinfo">
                         <div class="location"><i class="fas fa-map-marker-alt"></i>Somewhere in BD</div>
-                        <div class="joinedDate"><i class="fas fa-calendar-alt"></i>Joined on <span id="joindate">1 May, 2020</span></div>
+                        <div class="joinedDate"><i class="fas fa-calendar-alt"></i>Joined on <span id="joindate">1 May,
+                                2020</span></div>
                     </div>
                 </div>
             </div>
@@ -78,39 +81,48 @@
                 <div class="infomainWrapper">
                     <div class="ranks">
                         <a href="#">
-                            <div class="rankDiv">
-                                <h3 class="value"><span id="solvedProbsNum">100</span>/<span id="totProbsNum">2500</span></h3>
+                            <div class="rankDiv rounded shadow-sm shadow-sm">
+                                <h3 class="value"><span id="solvedProbsNum">100</span>/<span
+                                        id="totProbsNum">2500</span></h3>
                                 <p class="title">Solved Problems</p>
-                                <div class="rank"><p>Rank: <span id="solvedRank">10</span></p></div>
+                                <div class="rank">
+                                    <p>Rank: <span id="solvedRank">10</span></p>
+                                </div>
                                 <i class="far fa-check-circle"></i>
                             </div>
                         </a>
                         <a href="#">
-                            <div class="rankDiv">
+                            <div class="rankDiv rounded shadow-sm shadow-sm">
                                 <h3 id="ratingNum">1000</h3>
                                 <p class="title">Current Rating</p>
-                                <div class="rank"><p>Rank: <span id="ratingRank">10</span></p></div>
+                                <div class="rank">
+                                    <p>Rank: <span id="ratingRank">10</span></p>
+                                </div>
                                 <i class="fas fa-angle-double-up"></i>
                             </div>
                         </a><a href="#">
-                            <div class="rankDiv">
+                            <div class="rankDiv rounded shadow-sm shadow-sm">
                                 <h3 id="contributionNum">200</h3>
                                 <p class="title">contribution Points</p>
-                                <div class="rank"><p>Rank: <span id="contributionRank">10</span></p></div>
+                                <div class="rank">
+                                    <p>Rank: <span id="contributionRank">10</span></p>
+                                </div>
                                 <i class="fas fa-hands-helping"></i>
                             </div>
                         </a>
-                        
+
                     </div>
-    
+
 
                     <!-- progress section -->
 
-                    <div class="wrapper">
-                        <div class="mainDivheader"><h3>Category-wise Progress</h3></div>
-    
+                    <div class="wrapper p-3 p-lg-4 rounded shadow-sm">
+                        <div class="mainDivheader">
+                            <h3>Category-wise Progress</h3>
+                        </div>
+
                         <div class="progressBarContainer">
-    
+
                             <div class="progressBarDiv">
                                 <a href="#">
                                     <div class="progressDetail">
@@ -347,85 +359,115 @@
                                     </div>
                                 </a>
                             </div>
-        
+
                         </div>
                         <div id="divShowBtn">
                             <i id="downArrow" class="fas fa-chevron-down"></i>
                             <i id="upArrow" class="fas fa-chevron-up"></i>
                         </div>
-    
+
                     </div>
 
                     <!-- canvus section -->
 
-                    <div class="wrapper">
+                    <div class="wrapper p-3 p-lg-4 rounded shadow-sm">
                         <div class="mainDivheader">
                             <h3>Rating History</h3>
                         </div>
                         <div id="ratingCanWrapper">
                             <canvas id="ratingData"></canvas>
                         </div>
-                        
+
                     </div>
-                    <div class="wrapper">
+                    <div class="wrapper p-3 p-lg-4 rounded shadow-sm">
                         <div class="mainDivheader">
                             <h3>Verdicts</h3>
                         </div>
                         <div id="verCanWrapper">
                             <canvas id="verdicts"></canvas>
                         </div>
-                        
+
                     </div>
 
                     <!-- recent works section -->
 
-                    <div class="wrapper">
+                    <div class="wrapper p-3 p-lg-4 rounded shadow-sm">
                         <div class="activitiesContainer">
                             <div class="mainDivheader">
                                 <h3>Recent Works</h3>
                             </div>
                             <div class="activities">
                                 <ul>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
-                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
+                                    <li class="works"><span class="eventname">ABCD solved Nearest Co-Prime.</span><span
+                                            class="finishingtime">Time Here</span></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
-    
+
             <div id="tab2">
-                <div class="wrapper">
+                <div class="wrapper p-3 p-lg-4 rounded shadow-sm">
                     <div class="folloersContainer">
                         <div class="followersHead">
                             <h3>People Following ABCD</h3>
@@ -433,12 +475,18 @@
                         </div>
                         <div class="followersList">
                             <ul>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -446,7 +494,7 @@
             </div>
 
             <div id="tab3">
-                <div class="wrapper">
+                <div class="wrapper p-3 p-lg-4 rounded shadow-sm">
                     <div class="folloersContainer">
                         <div class="followersHead">
                             <h3>People Followed by ABCD</h3>
@@ -454,10 +502,14 @@
                         </div>
                         <div class="followersList">
                             <ul>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
-                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
+                                <li><img src="images/tmc1.png" alt=""><a href="#"><span class="followerName">Name
+                                            Here</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -465,7 +517,7 @@
             </div>
 
             <div id="tab4">
-                <div class="wrapper">
+                <div class="wrapper p-3 p-lg-4 rounded shadow-sm">
                     <div class="folloersContainer">
                         <div class="followersHead">
                             <h3>Ratings of ABCD</h3>
@@ -473,10 +525,22 @@
                         </div>
                         <div class="contestList">
                             <ul>
-                                <li><a href="#">Contest Name Here</a><p class="posRate"><span class="ic"><i class="fas fa-arrow-up"></i></span><span class="rating">2021</span></p></li>
-                                <li><a href="#">Contest Name Here</a><p class="negRate"><span class="ic"><i class="fas fa-arrow-down"></i></span><span class="rating">2021</span></p></li>
-                                <li><a href="#">Contest Name Here</a><p class="posRate"><span class="ic"><i class="fas fa-arrow-up"></i></span><span class="rating">2021</span></p></li>
-                                <li><a href="#">Contest Name Here</a><p class="negRate"><span class="ic"><i class="fas fa-arrow-down"></i></span><span class="rating">2021</span></p></li>
+                                <li><a href="#">Contest Name Here</a>
+                                    <p class="posRate"><span class="ic"><i class="fas fa-arrow-up"></i></span><span
+                                            class="rating">2021</span></p>
+                                </li>
+                                <li><a href="#">Contest Name Here</a>
+                                    <p class="negRate"><span class="ic"><i class="fas fa-arrow-down"></i></span><span
+                                            class="rating">2021</span></p>
+                                </li>
+                                <li><a href="#">Contest Name Here</a>
+                                    <p class="posRate"><span class="ic"><i class="fas fa-arrow-up"></i></span><span
+                                            class="rating">2021</span></p>
+                                </li>
+                                <li><a href="#">Contest Name Here</a>
+                                    <p class="negRate"><span class="ic"><i class="fas fa-arrow-down"></i></span><span
+                                            class="rating">2021</span></p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -484,9 +548,13 @@
             </div>
 
         </div>
-        
+
         <script src="js/chart.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
         <script src="js/main.js"></script>
     </section>
 </body>
+
 </html>
