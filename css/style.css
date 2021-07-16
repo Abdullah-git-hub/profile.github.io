@@ -12,15 +12,18 @@
 }
 
 :root {
-  --border: 1px solid gainsboro;
+  /* --border: 1px solid gainsboro; */
+  --border:none;
+  --tmc-pm: #0e2c30;
 }
 
 body {
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
+  background: #044e7d14;
 }
 
 .tabMenu {
-  border-bottom: 2px solid #5271ff;
+  border-bottom: 2px solid var(--tmc-pm);
   margin-left: 10px;
   margin-top: 10px;
 }
@@ -194,13 +197,15 @@ margin-right: 10px;
 .tabMenu ul {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .tabMenu ul li {
   /*! background: tomato; */
   padding: 10px;
   margin-right: 2px;
-  color: #5271ff;
+  color: var(--tmc-pm);
 }
 
 .tabMenu ul li span,
@@ -211,7 +216,7 @@ margin-right: 10px;
 }
 
 .clickedBtn {
-  background: #5271ff;
+  background: var(--tmc-pm);
   color: white !important;
 }
 
@@ -318,6 +323,7 @@ i#upArrow {
 
 .progressTxt h3 {
   font-weight: normal;
+  font-size: 20px;
 }
 
 .pregress {
@@ -354,6 +360,7 @@ i#upArrow {
   list-style: none;
   /* margin-top: 30px; */
   margin-right: 8px;
+  padding: 0;
 }
 
 .activities {
@@ -373,6 +380,7 @@ li.works {
 
 .followersList ul {
   list-style: none;
+  padding: 0;
 }
 
 .followersList ul li img {
@@ -418,6 +426,7 @@ li.works {
 
 .contestList ul {
   list-style: none;
+  padding: 0;
 }
 
 .contestList a {
@@ -438,6 +447,13 @@ li.works {
   margin-top: 20px;
 }
 
+.rank p {
+    margin: 0;
+}
+
+.contestList ul li p {
+    margin: 0;
+}
 .contestList li p .ic {
   margin-right: 10px;
   font-size: 16px;
@@ -474,7 +490,7 @@ i.fas.fa-hands-helping {
 }
 
 .activities::-webkit-scrollbar-thumb {
-  background-color: #5271ff;
+  background-color: var(--tmc-pm);
 }
 
 div#verCanWrapper {
